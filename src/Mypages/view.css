@@ -1,0 +1,96 @@
+  
+.thetitle{
+    height: 30px;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 10px;  
+}
+.titlename{
+    background-color:black;
+    border-radius: 10px;
+    color: antiquewhite;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+
+}
+ .titlelast{
+    background-color:black;
+    border-radius: 10px;
+    color: antiquewhite;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+  .titlemail{
+    background-color:black;
+    border-radius: 10px;
+    color: antiquewhite;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+
+}
+.titlerole{
+    background-color:black;
+    border-radius: 10px;
+    color: antiquewhite;
+    width: 50%;
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+.logout{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+.logout button{
+    width: 20%;
+    background-color: green;
+}
+
+.thehead{
+height: 30px;
+width: 100%;
+/* border: 2px solid red; */
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+margin-bottom: 10px;
+
+}
+.email{
+    /* background-color: black; */
+    width: 100%;
+    border: 2px solid black;  
+}
+
+.name{
+    /* background-color: black; */
+    width: 100%;
+    border: 2px solid black;  
+}
+
+.last{
+    /* background-color: black; */
+    width: 100%;
+    border: 2px solid black; 
+}
+
+.role{
+    /* background-color: aquamarine; */
+    width: 50%;
+    text-align: center;
+    border: 2px solid black;
+}
+
+
