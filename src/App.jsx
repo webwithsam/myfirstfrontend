@@ -9,7 +9,7 @@ function App() {
   const [viewthis, setviewthis] = useState(null);
  
   const data = async()=>{
-      const data =  await axios.get("http://localhost:4000/get/api/users",{ withCredentials:true }
+      const data =  await axios.get("https://myfirstserver-y0gs.onrender.com/get/api/users",{ withCredentials:true }
         ) 
         console.log(data.data.token)
       if(data.data.token === undefined){

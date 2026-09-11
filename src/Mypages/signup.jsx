@@ -96,7 +96,7 @@ export function SignUp({ setsignupview }) {
         password: pass.current.value,
         confirmpass: confirmpass.current.value,
       };
-      const url = "http://localhost:4000/post/api/signup";
+      const url = "https://myfirstserver-y0gs.onrender.com/post/api/signup";
       const config = {
         headers: {
           "Content-Type": "application/json",
