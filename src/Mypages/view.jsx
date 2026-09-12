@@ -1,24 +1,27 @@
 import { useEffect , useState} from "react";
 import "./view.css";
 import axios from "axios";
+const generalurl = import.meta.env.VITE_url;
 
 export function View() {
 const [thedata , setthedata] = useState([])
  const data = async()=>{ 
-    const data =  await axios.get("http://localhost:4000/get/api/users",{ withCredentials:true }
+    const data =  await axios.get(
+      `${generalurl}/get/api/users`,
+      { withCredentials:true }
     ) 
     setthedata(data.data)
    
    }
  const remove =()=>{
-  axios.post("http://localhost:4000/logout",{},{
+  axios.post(`${generalurl}/logout`,{},{
     withCredentials:true
   })
    window.navigation.reload();
  }
                            
  useEffect (()=>{
-  data()  
+  data 
  },[])
 
   return (

@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState, useRef } from "react";
 import { SignUp } from "./signup";
 import "./firstpage.css";
+const generalurl = import.meta.env.VITE_url;
 
 export function Login({ setviewthis }) {
   const email = useRef(null);
@@ -68,16 +69,14 @@ export function Login({ setviewthis }) {
         email: email.current.value,
         password: pass.current.value,
       };
-      const url = "https://myfirstserver-y0gs.onrender.com/post/api/user/login";
+      const url = `${generalurl}/post/api/user/login`;
       const send = await axios.post(url, body, {withCredentials: true });
       setviewthis(send.data.gonext);
       setload(send.data.state);
       setproblem(send.data.value);
       //console.log(send.data);
     } 
-    else {
-      
-    }
+    //else {}
   };
 
   const reload = () => {

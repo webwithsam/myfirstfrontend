@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import axios from "axios";
 import "./signup.css";
+const generalurl = import.meta.env.VITE_url;
 
 export function SignUp({ setsignupview }) {
   const [showPassword, setShowPassword] = useState(false);
@@ -96,7 +97,7 @@ export function SignUp({ setsignupview }) {
         password: pass.current.value,
         confirmpass: confirmpass.current.value,
       };
-      const url = "https://myfirstserver-y0gs.onrender.com/post/api/signup";
+      const url = `${generalurl}/post/api/signup`;
       const config = {
         headers: {
           "Content-Type": "application/json",
