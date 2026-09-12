@@ -11,6 +11,7 @@ const [thedata , setthedata] = useState([])
       { withCredentials:true }
     ) 
     setthedata(data.data)
+    console.log(thedata)
    
    }
  const remove =()=>{
