@@ -21,7 +21,7 @@ const [thedata , setthedata] = useState([])
  }
                            
  useEffect (()=>{
-  data 
+  data()
  },[])
 
   return (
